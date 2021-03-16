@@ -1,1 +1,2 @@
 # Skandi
+permalink: /index.html
