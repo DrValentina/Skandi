@@ -263,3 +263,123 @@ h2 {
   margin-left: 588px;
   padding-top: 50px;
 }
+
+.our_team_list {
+  display: flex;
+  width: 1036px;
+  margin: 0;
+  padding: 0;
+  margin-left: 181px;
+  margin-top: 40px;
+  justify-content: space-between;
+}
+
+.our_team_item {
+  text-decoration: none;
+  width: 320px;
+  list-style-type: none;
+}
+
+.our_team_text {
+  font-family: "Montserrat-Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: #533738;
+}
+
+.we_work {
+  width: 1200px;
+  height: 300px;
+  margin-top: 35px;
+}
+
+.we_work_title {
+  margin-left: 512px;
+}
+
+.we_work_list {
+  display:flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  margin-left: 80px;
+}
+
+.we_work_item {
+  margin: 10px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.Circle {
+  width: 70px;
+  height: 50px;
+  border: 1px solid #8D7370;
+  border-radius: 50%;
+  background-color: #8D7370;
+  margin-left: 106px;
+
+  font-family: "Montserrat-Regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 30px;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: top;
+  padding-top: 20px;
+}
+
+.we_work_item_text {
+  width: 285px;
+  font-family: "Montserrat-Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #533738;
+}
+
+.reviews {
+  width: 1036px;
+  height: 658px;
+  margin-top: 65px;
+  margin-bottom: 65px;
+  margin-left: 182px;
+}
+
+.reviews_title {
+  text-align: center;
+}
+
+.review_text {
+  width: 407px;
+  font-family: "Montserrat-Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: #533738;
+  padding: 0;
+  margin-bottom: 35px;
+}
+
+.review_author {
+  font-family: "Montserrat-Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: #533738;
+  margin-top: 19px;
+}
+
+.arrow_left,
+.arrow_right{
+  width: 32px;
+  height: 0;
+  border: 2px solid #533738;
+}
