@@ -14,22 +14,22 @@
           <a href="#">SKANDI</a>
         </li>
         <li class="nav_list_item">
-          <a href="#">О компании</a>
+          <a href="#about_us">О компании</a>
         </li>
         <li class="nav_list_item">
-          <a href="#">Портфолио</a>
+          <a href="#our_works">Портфолио</a>
         </li>
         <li class="nav_list_item">
-          <a href="#">Команда</a>
+          <a href="#our_team">Команда</a>
         </li>
         <li class="nav_list_item">
-          <a href="#">Как мы работаем</a>
+          <a href="#we_work">Как мы работаем</a>
         </li>
         <li class="nav_list_item">
-          <a href="#">Отзывы клиентов</a>
+          <a href="#reviews">Отзывы клиентов</a>
         </li>
         <li class="nav_list_item">
-          <a href="#">Оставить заявку</a>
+          <a href="#application">Оставить заявку</a>
         </li>
         <li class="nav_list_item"><a href="tel:+7 (981) 854-46-24">+7 (981) 854-46-24</a></li>
       </ul>
@@ -39,11 +39,11 @@
       <p class="header_info_text">Подбираем текстиль, мебель и аксессуары <br>
         под ваш интерьер, находим магазины <br>
         и помогаем организовать доставку</p>
-      <button class="header_button" type="button" name="button">Оставить заявку</button>
+      <a class="header_button" href="#application">Оставить заявку</a>
     </div>
   </header>
   <main>
-    <section class="about_us">
+    <section id="about_us" class="about_us">
       <h2 class="title about_us_title">О нас</h2>
       <img src="IMG/Mask Group.png" alt="Стол">
       <p class="about_us_item">Премиальный европейский текстиль — одно из самых главных направлений работы коллектива. Создавать неповторимые интерьеры для наших дорогих клиентов, уделяя внимание мельчайшим деталям — вот то,  что по-настоящему вдохновляет дизайнеров нашей студии.</p>
@@ -56,13 +56,18 @@
         </ul>
     </section>
 
-    <section class="our_works">
+    <section id="our_works" class="our_works">
       <h2 class="our_works_title">Наши работы</h2>
       <div class="apart">
-        <img class="bedroom" src="IMG/Спальня.png" alt="Спальня">
-        <img src="IMG/Rectangle 134.png" alt="Кухня">
-        <img src="IMG/Rectangle 132.png" alt="Гостиная">
-        <img src="IMG/Ванная.png" alt="Ванная">
+        <div class="apart_img_container">
+          <div class="apart_img_background">
+          <p class="apart_img_title">Квартира-студия 30 кв.м.</p>
+          <p class="apart_img_text">В квартире были светлые стены и тёплые цвета. Мы сконцентрировались на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.</p>
+        </div>
+      </div>
+        <div class="apart_img"><img src="IMG/Rectangle 134.png" alt="Кухня"></div>
+        <div class="apart_img"><img src="IMG/Rectangle 132.png" alt="Гостиная"></div>
+        <div class="apart_img"><img src="IMG/Ванная.png" alt="Ванная"></div>
       </div>
       <a href="#">Смотреть ещё
       <div class="arrow1"></div>
@@ -70,7 +75,7 @@
       </a>
     </section>
 
-    <section class="our_team">
+    <section id="out_team" class="our_team">
       <h2 class="our_team_title">Команда</h2>
       <ul class="our_team_list">
         <li class="our_team_item">
@@ -91,7 +96,7 @@
 как обсутроить дом так, чтобы вам понравилось.</p>
         </li>
       </ul>
-      <div class="we_work">
+      <div id="we_work" class="we_work">
         <h2 class="we_work_title">Как мы работаем</h2>
         <ul class="we_work_list">
           <li class="we_work_item">
@@ -113,7 +118,7 @@
       </div>
     </section>
 
-    <article class="reviews">
+    <article id="reviews" class="reviews">
       <h2 class="reviews_title">Отзывы</h2>
       <div class="reviews_container">
         <div class="reviews_button">
@@ -141,18 +146,33 @@
         </div>
       </div>
     </article>
-    <section>
-      <h2>Оставить отзыв</h2>
-      <p>Оставьте свои контакты. Менеджер перезвонит в удобное вам время и ответит на все вопросы.</p>
-      <form class="" action="index.html" method="post">
-        <input type="text" name="Ваше имя" value="">
-        <input type="tel" name="Введите телефон" value="">
-        <button type="button" name="button">Оставьте заявку</button>
-      </form>
+
+    <section id="application" class="application">
+      <div class="application_filling">
+        <div class="application_container">
+          <h2 class="application_title">Оставить заявку</h2>
+          <p class="application_text">Оставьте свои контакты. Менеджер перезвонит
+            <br>в удобное вам время и ответит на все вопросы.</p>
+          <form class="application_form" action="index.html" method="post">
+            <input id="name" type="text" name="name" value="" placeholder="Ваше имя">
+            <input id="tel" type="tel" name="tel" value="" placeholder="Введите телефон">
+          </form>
+          <button class="application_button" type="button" name="button">Оставьте заявку</button>
+        </div>
+        <div class="application_map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d716.892813993915!2d30.322778995896233!3d59.938635366811496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1616253605591!5m2!1sru!2sru" width="590" height="624" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
     </section>
   </main>
-  <footer>
 
+  <footer class="footer">
+    <ul class="footer_list">
+      <li class="footer_item">+7(981) 857-46-24</li>
+      <li class="footer_item">г. Санкт-Петербург, ул. Большая Конюшенная, 19</li>
+      <li class="footer_item">ИП Королёва А.А.</li>
+    </ul>
   </footer>
 
 </body>
+</html>
