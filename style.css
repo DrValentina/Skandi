@@ -11,6 +11,73 @@ html, body {
   padding: 0;
 }
 
+body {
+  overflow-y: hidden;
+}
+
+/*Preload*/
+
+.preload {
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #533738;
+  animation-name: damping;
+  animation-duration: 7s;
+}
+
+.preload-logo-img {
+  align-self: center;
+  margin: 0;
+  padding: 0;
+  animation-name: logo-left;
+  animation-duration: 2s;
+}
+
+.preload-logo-text {
+  font-family: "Montserrat-Regular";
+  font-size: 100px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  align-self: center;
+  animation-name: text-right;
+  animation-duration: 2s;
+}
+
+@keyframes damping {
+  from {
+    opacity: 1;
+  } 25% {
+    opacity: 1;
+  } to {
+    opacity: 0;
+  }
+}
+
+@keyframes logo-left {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  } to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes text-right {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  } to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
 /* Header */
 
 .header {
@@ -125,6 +192,10 @@ html, body {
 
 /* Banner*/
 
+.main {
+  position: relative;
+}
+
 .banner {
   position: relative;
   margin: 0;
@@ -207,6 +278,7 @@ html, body {
 }
 
 .about-us__container{
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: flex-start;
